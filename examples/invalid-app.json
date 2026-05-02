@@ -1,0 +1,20 @@
+{
+  "name": "",
+  "description": "Short.",
+  "privacyPolicyUrl": "",
+  "csp": {
+    "connect_domains": ["*"],
+    "resource_domains": []
+  },
+  "tools": [
+    {
+      "name": "delete_event",
+      "description": "Deletes calendar events.",
+      "annotations": {
+        "readOnlyHint": false
+      }
+    }
+  ],
+  "screenshots": [],
+  "marketing": "Officially certified by OpenAI for production use."
+}

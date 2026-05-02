@@ -1,0 +1,24 @@
+{
+  "name": "Calendar Scout",
+  "description": "Finds open meeting windows across team calendars without changing events.",
+  "privacyPolicyUrl": "https://example.com/privacy",
+  "csp": {
+    "connect_domains": ["https://api.example.com"],
+    "resource_domains": ["https://cdn.example.com"]
+  },
+  "tools": [
+    {
+      "name": "search_availability",
+      "description": "Searches calendars for available meeting windows.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    }
+  ],
+  "screenshots": [
+    {"path": "screenshots/home.png"},
+    {"path": "screenshots/tool-result.png"}
+  ]
+}
