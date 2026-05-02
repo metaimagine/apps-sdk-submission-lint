@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">apps-sdk-submission-lint terminal demo</title>
+  <desc id="desc">A terminal-style screenshot showing lint findings for an invalid app manifest.</desc>
+  <rect width="960" height="540" rx="12" fill="#101418"/>
+  <rect x="0" y="0" width="960" height="46" rx="12" fill="#222a31"/>
+  <circle cx="24" cy="23" r="7" fill="#ff5f56"/>
+  <circle cx="48" cy="23" r="7" fill="#ffbd2e"/>
+  <circle cx="72" cy="23" r="7" fill="#27c93f"/>
+  <text x="96" y="29" fill="#cdd7df" font-family="Menlo, Consolas, monospace" font-size="14">apps-sdk-submission-lint demo</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="20">
+    <text x="34" y="88" fill="#8bd5ff">$ apps-sdk-submission-lint scan examples/invalid-app.json</text>
+    <text x="34" y="132" fill="#f0f4f8">apps-sdk-submission-lint scan: examples/invalid-app.json</text>
+    <text x="34" y="164" fill="#ffcc66">8 finding(s)</text>
+    <text x="34" y="214" fill="#ff6b6b">[ERROR]</text>
+    <text x="124" y="214" fill="#f0f4f8">app.name.missing at $.name</text>
+    <text x="64" y="246" fill="#cdd7df">App name is missing.</text>
+    <text x="64" y="278" fill="#98d77d">Fix: Add a clear app or tool name.</text>
+    <text x="34" y="334" fill="#ff6b6b">[ERROR]</text>
+    <text x="124" y="334" fill="#f0f4f8">csp.connect.broad_domain at $.csp.connect_domains[0]</text>
+    <text x="64" y="366" fill="#cdd7df">CSP connect domain is too broad: *</text>
+    <text x="64" y="398" fill="#98d77d">Fix: Replace wildcards with exact origins such as https://api.example.com.</text>
+    <text x="34" y="462" fill="#9aa7b2">Independent local lint helper. Not OpenAI approval or certification.</text>
+  </g>
+</svg>

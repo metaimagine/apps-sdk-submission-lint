@@ -1,10 +1,14 @@
 # apps-sdk-submission-lint
 
+[![CI](https://github.com/metaimagine/apps-sdk-submission-lint/actions/workflows/ci.yml/badge.svg)](https://github.com/metaimagine/apps-sdk-submission-lint/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/metaimagine/apps-sdk-submission-lint?display_name=tag&sort=semver)](https://github.com/metaimagine/apps-sdk-submission-lint/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/metaimagine/apps-sdk-submission-lint/blob/main/LICENSE)
+
 `apps-sdk-submission-lint` is a small offline CLI for catching common Apps SDK-style submission metadata gaps before a human review pass.
 
 It scans a local JSON manifest or app metadata file and reports practical issues around naming, descriptions, privacy policy links, content security policy domains, tool annotations, screenshots, and unsafe wording.
 
-This tool is not OpenAI approval, certification, endorsement, or a guarantee that an app will pass any submission review.
+This tool is not OpenAI approval, certification, endorsement, or a guarantee that an app will pass any submission review. It is an independent local lint helper.
 
 ## Why
 
@@ -35,6 +39,8 @@ JSON output is available for CI or automation:
 ```
 
 ## Example Output
+
+![Terminal demo showing apps-sdk-submission-lint findings](docs/assets/terminal-demo.svg)
 
 ```text
 apps-sdk-submission-lint scan: examples/invalid-app.json
@@ -105,3 +111,5 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -e ".[dev]"
 .venv/bin/python -m pytest -q
 ```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution rules and release hygiene.
